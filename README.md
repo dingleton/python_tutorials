@@ -22,3 +22,4 @@ numpy_arrays.py - Code to test/experiment with the numpy moduke.
 
 name_main_1.py + _2.py & _3.py. These test for the value of __name__ when the code run as the main program or included in a module. Name_main_1.py should be run as a program which imports name_main_2.py & name_main_3.py. The latter two can be run as (main) programs individually. 
 
+generators1_CS.py & generators2_CS.py. These define and run Python generarators alongside the equivalent code that uses functions 
