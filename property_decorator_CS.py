@@ -14,7 +14,7 @@ Sample Python code to (i) use property Decorators
 
 
 class Employee:
-    """Define Employee clasd and add fist & last name to 'self'
+    """Define Employee class and add fist & last name to 'self'
     """
     def __init__(self, first, last):
         self.first = first
@@ -25,7 +25,7 @@ class Employee:
     @property
     def email(self):
         """
-        Decorated function to return a string containing a persons e-mail
+        Decorated function to return a string containing a Employees e-mail
         """
         return '{}.{}@email.com'.format(self.first, self.last)
     #create a method to generate an e-mail address of format 'first.last@email.com'
