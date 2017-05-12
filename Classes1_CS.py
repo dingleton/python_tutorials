@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Python code to experiment with Classes. It includs :
+Python code to experiment with Classes. It includes :
 Defining : a class, attributes of the class & methods used in the class
 
 Precendance of attributes with then Class structure and instances of the class
@@ -15,8 +15,8 @@ class Employee:
     """ Definition of Employee class. It
         a. Create a class attributes of : first & last name, Pay, e-mail
         b. Define class methods to create the Fullname & pay after a salary raise
-        c. Define Class variable for (i) Salary raise amount and
-            (ii) to count the number of employees
+        c. Define Class attributes for (i) Salary raise amount and
+            (ii) a count the number of employees
     """
 
     # Create class variables, these are shared amongst all instances of a Class

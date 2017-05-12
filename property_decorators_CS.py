@@ -25,7 +25,7 @@ class Employee:
         return '{}.{}@email.com'.format(self.first, self.last)
     #create a method to generate an e-mail address of format 'first.last@email.com'
     #however we can access this is an attibute and not a method in the main code
-    #i.e. variable.email, not variable.email()
+    #i.e. onject.email, not object.email()
 
     @property
     def fullname(self):
@@ -33,7 +33,10 @@ class Employee:
     #create a method to generate a fullname of format 'first last'
     
     @fullname.setter
-    def fullname(self, name):   #define a method within the setter
+    def fullname(self, name):
+        """ The fullname setter function take a space seperated name of format 
+        'firstname lastname' and sets the attributes 'first' and 'last'
+        """
         first, last = name.split(' ')
         self.first = first
         self.last = last
@@ -58,7 +61,7 @@ print(emp_1.fullname)
 
 # Change emp_1 by setting the 'fullname' attribute 
 # The @fullname.setter will parse this and set first and last to new values.
-# In turn, the e-mail method will set the e-mail to the new value
+# In turn, the e-mail decorator will set the e-mail to the new value
 emp_1.fullname = 'Fred Flintstone'
 print(emp_1.first)
 print(emp_1.last)
