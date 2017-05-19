@@ -12,7 +12,7 @@ import logging
 #(i.e. logging_test_2) as it's __name__ attribute.
 import logging_test2
 
-#Create the logger, use duner name as the logger name
+#Create the logger, use __name__ as the logger name
 #Set the loging level to INFO
 # Levels are : NOTSET->DEBUG->INFO->WARNING->ERROR->CRITICAL
 logger = logging.getLogger(__name__)
@@ -27,6 +27,11 @@ file_handler = logging.FileHandler('employee_logger.log')
 file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
+
+#Repeat the above but for the console
+stream_handler = logging.StreamHandler()
+stream_handler.setFormatter(formatter)
+logger.addHandler(stream_handler)
 
 
 #define Employee class
@@ -53,3 +58,6 @@ class Employee:
 empl1 = Employee("Bill", "Gates")
 empl2 = Employee("Donald", "Trump")
 empl3 = Employee("Alan", "Greenspan")
+
+#finally, close the file handler
+file_handler.close()

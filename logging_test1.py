@@ -21,9 +21,16 @@ Sample python code to tes/experiment with the logging function
 
 import logging
 
-logging.basicConfig(filename='logging_test1.log',
-                    level=logging.DEBUG, 
-                    format='%s(asctime)s:%(levelname)s:%(message)s')
+#Specify
+#1. Destination file, if not set the default is the console (sys.stderr) 
+#2. File mode - set to 'a' append in case below
+#3. Message & date format
+#4. Logging error level
+
+logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s',
+                    datefmt='%d--%m--%Y %I:%M:%S',
+                    filename='logging_test1.log', filemode='a',
+                    level=logging.DEBUG)
 
 def add(x, y):
     """Add function"""
@@ -44,6 +51,7 @@ def divide(x, y):
 num1 = 10
 num2 = 4
 
+#Add variable data to log message
 add_result = add(num1, num2)
 logging.debug('Add {} & {} to get {}'.format(num1, num2, add_result))
 
@@ -55,3 +63,9 @@ logging.debug('Divide {} & {} to get {}'.format(num1, num2, div_result))
 
 mult_result = multiply(num1, num2)
 logging.debug('Multiply {} & {} to get {}'.format(num1, num2, mult_result))
+
+#Now write messages of increasing severity to the log file
+logging.info('Info message')
+logging.warning('Warning message')
+logging.error('Error message')
+logging.critical('Critical message')
