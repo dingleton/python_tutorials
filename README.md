@@ -30,4 +30,9 @@ classes_1CS.py, classes2_CS.py. classes3_CS.py have code to define/experiement w
 logging_test1.py. Code to test/experiment with the python logging functions. This creates a logfile logging_test1.log
 
 logging_test2.py & employee_logger.py. These files uses more advanced logging function and generate log files logging_test2.log & employee_logger.log. 
-employee_logger.py is imported into logging_test2.py but still uses employer_logger.log as it's log file 
+employee_logger.py is imported into logging_test2.py but still uses employer_logger.log as it's log file
+
+sqlite_test3.py, sqlite_test4.py & sqlite_test5.py. These files create, intgerroges & modify a sqlite3 database.
+a. sqlite_test3.py creates a database/table & must be run first
+b. sqlite_test4.py interrogates it
+c. sqlite_test5.py modifies & deletes some values
