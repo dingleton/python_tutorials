@@ -1,11 +1,9 @@
 
-# python_tutorials
-
-# This contains a number of python programs written to test the commands given in Python tutorials
-# Their output is typically print statments showing the effect of Python commands. In come cases files are copied and log files created. 
-# These were tested with Python 3.6 running Windows 10 environment and using teh anaconda environment.
-# They are published simply to show my level of competance/learning of the Python programming language
-# Tutorials based on those given on the Python Website https://docs.python.org/3/tutorial/ and You Tube content by Corey Schafer https://www.youtube.com/user/schafer5
+This directory contains a number of python programs written to test the commands given in Python tutorials
+Their output is typically print statments showing the effect of Python commands. In come cases files are copied and log files created. 
+These were tested with Python 3.6 running on Windows 10 and using the anaconda environment.
+They are published simply to show my level of competance/learning of the Python programming language000
+These are based on chapter 5-8 of the Python Website https://docs.python.org/3/tutorial/ and You Tube content by Corey Schafer https://www.youtube.com/user/schafer5
 
 Python programs to experiment/test the commands in chapters 5, 7 & 8 of the online tutorial
 
@@ -20,10 +18,10 @@ Files : 8_modules.py & fib_mod.py - this tests the import module function as def
 It imports fib_mod.py which prints and returns the fibonnaci series of numbers.
 
 
-Below is a list of the programs used to experiment/test with other Python command/modules etc. These were taken from the You Tube tutorials on Python by Corey Schafer https://www.youtube.com/user/schafer5
+Below is a list of the programs used to experiment/test with other Python commands/modules etc. These were taken from the You Tube tutorials on Python provided by Corey Schafer https://www.youtube.com/user/schafer5
 
 Datetime module
-date_time_tutorial.py
+File : date_time_tutorial.py
 This experiments with various datetime function in naive and non-naive formats.
 
 Decorators
@@ -35,7 +33,7 @@ File : numpy_arrays.py
 Code to test/experiment with the numpy moduke. 
 
 __name__ & __main__
-name_main_1.py + _2.py & _3.py. 
+Files : name_main_1.py + _2.py & _3.py. 
 These test for the value of __name__ when the code run as the main program or included in a module. Name_main_1.py should be run as a program which imports name_main_2.py & name_main_3.py. The latter two can be run as (main) programs individually. 
 
 Generators
