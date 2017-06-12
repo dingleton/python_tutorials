@@ -61,3 +61,7 @@ The following 3 files create, interrogate & modify a sqlite3 database.
 a. sqlite_test3.py creates a database/table. This must be run first and will create the file "Magnificent_Motors.db"
 b. sqlite_test4.py interrogates the database
 c. sqlite_test5.py modifies & deletes some values
+
+Reading from an Excel file, handling exceptions, checking the type/instance of data in the cell and that it is within sensible limits
+a. Excel_read_exception.py does the above function on file ... 
+b. car_stock.xlsx - this contains a sample list of cars in stock at a car dealer.
